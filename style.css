@@ -28,14 +28,14 @@ html, body{
 	height: 100px;
 	margin: 5px 0;
 	display: inline-block;
-	background-color: black;
-	color: white;
+	background-color: yellow;
+	color: black;
 	line-height: 90px;
 	text-align: center;
 	transition: 300ms;
 }
 a.active, .nav a:hover{
-	background-color: white;
+	background-color: yellow;
 	color: black;
 	width: 100%;
 }
@@ -65,13 +65,13 @@ a.active, .nav a:hover{
 	position: absolute;
 	right: 0;
 	bottom: -50px;
-	color: white;
+	color: black;
 	font-family: verdana;
 }
 .home h1{
 	font-size: 95px;
 	padding-right: 90px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid black;
 	text-transform: uppercase;
 }
 .home h3{
