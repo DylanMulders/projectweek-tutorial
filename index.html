@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="background">
+<div class="nav">
+	<a class="a active" href="#">Lay-out tutorial</a>
+	<a class="b" href="#">lay-out HTML</a>
+	<a class="c" href="#">lay-out CSS</a>
+	<a class="d" href="#">hoe maak je een lay-out  </a>
+</div>
+
+<div class="content">
+	
+	<div class="home">
+		<h1>Lay-out</h1>
+		<h3>Gemaakt door : Dylan Mulders & Gijs Haan</h3>
+	</div>
+
+	
+	<div class="aboutus">
+
+			<h1>HTML Lay-out</h1>
+			<br>
+			<div> Layout Elementen
+			Websites laten vaak content zien in meerdere colummen (zoals bij een magazine of een krant)
+			
+			HTML Offert meerdere semantische elementen die de verschillende delen van de web pagina definieren:
+			<br>
+			HTML5 semantische elementen
+			<br>
+			header - Definieert een koptekst voor een document of een sectie
+			<br>
+			nav - Definieert een container voor navigatielinks
+			<br>
+			section - Definieert een sectie in een document
+			<br>
+			article - Definieert een onafhankelijk, op zichzelf staand artikel
+			<br>
+			aside - Definieert inhoud naast de inhoud (zoals een zijbalk)
+			<br>
+			footer - Definieert een voettekst voor een document of een sectie
+			<br>
+			details - Definieert aanvullende details
+			<br>
+			summary - Definieert een kop voor het element details
+		 <br>
+		 <br>
+
+		 
+          gebruik nooit table om de layout van je site te veranderen, de table tag is gemaakt om data te displayen, en niet om vorm te geven aan een site.
+			Wat moet je/kan je wel gerbuiken?
+			<br>
+			- CSS Frameworks,
+			<br>
+			- CSS Flows, helaas hebben flows nadelen, je site kan minder flexibel worden
+			<br>
+			- CSS Grid view, hierbij wordt alles op een soort grid gezet als layout, dit werkt alleen niet in IE of edge 15
+		</div>
+
+			
+
+		
+
+			
+	
+	</div>
+
+	<div class="labpage">
+		<div>
+				Koptekst.
+				<br>
+				Een koptekst bevindt zich meestal bovenaan de website (of direct onder een navigatiemenu bovenaan). Het bevat vaak een logo of de naam van de website
+				.header {
+					<br>
+				  background-color: #F1F1F1;
+				  <br>
+				  text-align: center;
+				  <br>
+				  padding: 20px;
+				}
+				<br>
+
+				Een navigatiebalk bevat een lijst met links waarmee bezoekers door uw website kunnen navigeren
+				<br>
+				<br>
+				/* The navbar container /
+				<br>
+				.topnav {
+					<br>
+			  overflow: hidden;
+			  <br>
+			  background-color: #333;
+			  <br>
+				}
+				<br>
+
+			/ Navbar links /
+			<br>
+			.topnav a {
+				<br>
+			float: left;
+			<br>
+			display: block;
+			<br>
+			color: #f2f2f2;
+			<br>
+			text-align: center;
+			<br>
+			padding: 14px 16px;
+			<br>
+			text-decoration: none;
+			<br>
+			}
+			<br>
+
+			/ Links - change color on hover */
+			<br>
+			.topnav a:hover {
+				<br>
+			background-color: #ddd;
+			<br>
+			color: black;
+			<br>
+			}
+		</div>
+			
+			
+		
+			
+			
+			
+				
+		
+		</div>
+	
+	
+
+	<div class="contactus">
+		<div>
+				Inhoud
+				De lay-out in dit gedeelte is vaak afhankelijk van de doelgebruikers. De meest voorkomende lay-out is een (of een combinatie van) van de volgende:
+				<br>
+				1-kolom (vaak gebruikt voor mobiele browsers)
+				<br>
+				2-koloms (vaak gebruikt voor tablets en laptops)
+				<br>
+				Indeling met 3 kolommen (alleen gebruikt voor desktops)
+				<br>
+				<br>
+				/* Create three equal columns that floats next to each other /
+				<br>
+				.column {
+					<br>
+				  float: left;
+				  <br>
+				  width: 33.33%;
+				  <br>
+				}
+				<br>
+				<br>
+				/ Clear floats after the columns /
+				<br>
+				.row:after {
+					<br>
+				  content: "";
+				  <br>
+				  display: table;
+				  <br>
+				  clear: both;
+				  <br>
+				}
+				<br>
+				<br>
+				/ Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+				<br>
+				@media screen and (max-width: 600px) {
+					<br>
+				  .column {
+					  <br>
+					width: 100%;
+					<br>
+				  }
+				}
+				<br>
+				<br>
+				<a href="Example1PROJECTWEEK1.png">Link naar foto van de code</a>
+				
+		</div>
+	
+
+
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').click(function(){
+		//alert("i am click");
+		var selected = $(this);
+		$('a').removeClass('active');
+		$(selected).addClass('active');
+	});
+	var $a = $('.a'),
+	$b = $('.b'),
+	$c = $('.c'),
+	$d = $('.d'),
+	$home = $('.home'),
+	$aboutus = $('.aboutus'),
+	$labpage = $('.labpage'),
+	$contactus = $('.contactus');
+
+	$a.click(function(){
+		$home.fadeIn();
+		$aboutus.fadeOut();
+		$labpage.fadeOut();
+		$contactus.fadeOut();
+	});
+	$b.click(function(){
+		$aboutus.fadeIn();
+		$home.fadeOut();
+		$labpage.fadeOut();
+		$contactus.fadeOut();
+	});
+	$c.click(function(){
+		$labpage.fadeIn();
+		$home.fadeOut();
+		$aboutus.fadeOut();
+		$contactus.fadeOut();
+	});
+	$d.click(function(){
+		$contactus.fadeIn();
+		$home.fadeOut();
+		$labpage.fadeOut();
+		$aboutus.fadeOut();
+	});
+});
+</script>
+</body>
+</html>
