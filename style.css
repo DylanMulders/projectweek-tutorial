@@ -1,26 +1,31 @@
+/*this file is created for a css file
+Author : Dylan Mulders
+Date : 13-11-2019
+last edited : 13-11-2019 08:51
+edit comments */
 
 
 *{
 	margin: 0;
 	padding: 0;
 }
-html, body{
-	width: 100%;
-	height: 100%;
-	font-size: 14px;
-	font-weight: normal;
-	background-color: gray;
+html, body{               /*create the body of the html page*/
+	width: 100%;          /*create the width of the body of the html page*/
+	height: 100%;		/*create the height of the body of the html page*/
+	font-size: 14px;	/*create the font-size of the body of the html page*/
+	font-weight: normal;/*create the font-weight of the body of the html page*/
+	background-color: gray; /*create the background-color of the body of the html page*/
 }
 
 
-.nav{
-	width: 400px;
-	height: auto;
-	position: absolute;
+.nav{				/*create the nav bar off the html page*/
+	width: 400px;	/*set the width off the navbar in the html*/
+	height: auto; 	/*set the height off the navbar in the html*/
+	position: absolute;	/*set the position off the navbar in the html*/
 	top: 20%;
 	left: 0;
 }
-.nav a{
+.nav a{				/*create the text in the navigation*/
 	text-decoration: none;
 	font-size: 23px;
 	font-family: verdana;
@@ -34,7 +39,7 @@ html, body{
 	text-align: center;
 	transition: 300ms;
 }
-a.active, .nav a:hover{
+a.active, .nav a:hover{  /*hover the text off the html*/
 	background-color: yellow;
 	color: black;
 	width: 100%;
@@ -52,7 +57,7 @@ a.active, .nav a:hover{
 	width: 90%;
 }
 
-.content{
+.content{			/*set the content page in the html file*/
 	position: absolute;
 	width: 930px;
 	min-height: 500px;
@@ -61,20 +66,20 @@ a.active, .nav a:hover{
 	right: 0;
 	top: 10%;
 }
-.home{
+.home{			/*create the home page in the html file*/
 	position: absolute;
 	right: 0;
 	bottom: -50px;
 	color: black;
 	font-family: verdana;
 }
-.home h1{
+.home h1{   	/*create a header in the html file*/
 	font-size: 95px;
 	padding-right: 90px;
 	border-bottom: 1px solid black;
 	text-transform: uppercase;
 }
-.home h3{
+.home h3{			/*create a header in the html file*/
 	font-size: 28px;
 	padding: 5px 0;
 	opacity: 0.6;
@@ -84,7 +89,7 @@ a.active, .nav a:hover{
 
 
 
-.contactus{
+.contactus{ 	/*create a page for the html page */
 	position: absolute;
 	right: 0;
 	top: 10px;
@@ -99,7 +104,7 @@ a.active, .nav a:hover{
 
 
 
-.labpage{
+.labpage{		/*create a page for the html page */
 	position: absolute;
 	right: 0;
 	top: 10px;
@@ -112,12 +117,12 @@ a.active, .nav a:hover{
 
 	
 }
-.labpage h1{
+.labpage h1{		/*create a header in the page for the html page */
 	
 	text-align: center;
 }
 
-.aboutus{
+.aboutus{			/*create a  page for the html page */
 	position: relative;
 	right: 0;
 	top: 10px;
@@ -128,7 +133,7 @@ a.active, .nav a:hover{
 	font-size: 20px;
 	
 }
-.aboutus h1{
+.aboutus h1{				/*create a  page for the html page */
 	text-align: center;
 }
 
